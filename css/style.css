@@ -15,13 +15,13 @@ html {
 }
 
 body {
-  padding-top: 1.2em;
+  padding-top: 1em;
 }
 
 .button {
   border-radius: 40px;
-  font-size: 0.8em;
-  width: 12em;
+  font-size: 0.7em;
+  width: 11em;
   color: var(--light-grayish-blue);
   background-image: linear-gradient(
     to right,
@@ -41,7 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1050px;
   margin: auto;
 }
 
@@ -56,7 +56,7 @@ body {
 
 .nav__item a {
   text-decoration: none;
-  padding: 0.9em;
+  padding: 1em;
   color: var(--grayish-blue);
   letter-spacing: -1px;
 }
@@ -65,8 +65,14 @@ body {
 .hero {
   display: grid;
   grid-template-areas: "hero";
-  height: 150vh;
-  max-height: 650px;
+  height: 145vh;
+  max-height: 590px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--very-light-gray),
+    var(--white)
+  );
+  /* background-color: var(--light-grayish-blue); */
 }
 
 .hero > * {
@@ -74,28 +80,40 @@ body {
 }
 
 .hero__image-bg {
-  width: 100%;
   justify-self: end;
+  height: min(145vh, 590px);
   object-fit: cover;
-  object-position: 38.7vw -70vmin;
-  height: min(150vh, 650px);
+  object-position: 25vw -35vmin;
+  width: 80%;
 }
 
 .hero__image-mockup {
   justify-self: end;
   object-fit: cover;
-  object-position: 9.8vw -30vh;
+  object-position: 8.7vw -18vmin;
+  width: 52%;
 }
 
 .hero__content {
   width: 30%;
-  margin-left: 6em;
-  margin-top: 9.6em;
+  margin-left: 7.5em;
+  margin-top: 7.5em;
 }
 
 h1 {
   font-weight: 300;
   color: var(--dark-blue);
-  line-height: 55px;
-  font-size: 2.5em;
+  line-height: 1;
+  font-size: 2.7em;
+  letter-spacing: -0.9px;
+}
+
+.hero__content p {
+  padding-top: 1.5em;
+  font-size: 16px;
+  color: var(--grayish-blue);
+}
+
+.hero__button {
+  margin-top: 2.5em;
 }
