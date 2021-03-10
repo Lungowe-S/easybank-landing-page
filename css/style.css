@@ -204,9 +204,10 @@ h1 {
   letter-spacing: -0.9px;
 }
 
-.article__title {
+.article__title a {
   font-weight: 400;
   color: var(--dark-blue);
+  text-decoration: none;
 }
 
 .article__copy {
